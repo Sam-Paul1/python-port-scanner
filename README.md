@@ -66,15 +66,15 @@ python port_scanner.py google.com 20 100
 
 ```text
 --------------------------------------------------
-Scanning Target: google.com (142.250.xxx.xxx)
-Port Range: 20 to 100
+Scanning Target: one.one.one.one (1.0.0.1)
+Port Range: 443 to 443
 --------------------------------------------------
 
-80 is open: http
+443 is open: https
 
-Total Ports Scanned: 81
+Total Ports Scanned: 1
 Total Open Ports: 1
-Time taken: 0.24 seconds
+Time taken: 0.03 seconds
 
 Scan complete!
 --------------------------------------------------
@@ -106,6 +106,18 @@ Building this project helped me understand:
 - Exception handling
 - Writing modular Python code
 - Network port scanning fundamentals
+
+---
+## Skills Demonstrated
+
+- Python Programming
+- Socket Programming
+- TCP Networking
+- Multithreading
+- DNS Resolution
+- CLI Development
+- Exception Handling
+- Input Validation
 
 ---
 
