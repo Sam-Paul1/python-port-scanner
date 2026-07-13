@@ -1,4 +1,4 @@
-# Python Port Scanner
+# Multithreaded TCP Port Scanner
 
 A multithreaded TCP port scanner written in Python that scans a user-specified range of ports, identifies open ports, and detects common services. This project was built as part of my cybersecurity learning journey to gain hands-on experience with networking, sockets, multithreading, and command-line tools.
 
