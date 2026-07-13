@@ -81,7 +81,9 @@ Scan complete!
 ```
 
 ---
+## Screenshot
 
+![Port Scanner Demo](images/demo.png)
 ## Project Structure
 
 ```

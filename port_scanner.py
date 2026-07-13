@@ -65,6 +65,7 @@ def scan_port(ip,port):
     scanner.settimeout(TIMEOUT)
     try:
         scanner.connect((ip, port))
+        print(f"Connected to {port}")
         try:
             service=socket.getservbyport(port)
         except Exception:
@@ -79,13 +80,15 @@ print(f"Scanning Target: {ip} ({resolved_ip})")
 print(f"Port Range: {start} to {end}")
 print("-" * 50)
 start_time=time.time()
+print(start, end)
 
-for i in range(start, end+1):
-    ports_scanned+=1
-    worker = threading.Thread(target=scan_port , args=(resolved_ip, i))    
+for i in range(start, end + 1):
+    print("Scanning", i)
+    ports_scanned += 1
+    worker = threading.Thread(target=scan_port, args=(resolved_ip, i))
     worker.start()
-
     threads.append(worker)
+    
 for thread in threads:
     thread.join()
 results.sort()
